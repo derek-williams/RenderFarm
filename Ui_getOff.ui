@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>433</width>
+    <height>165</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>433</width>
+    <height>165</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>433</width>
+    <height>165</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Render Node Control</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>95</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="onlineButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Set render node status to ONLINE. The node will begin looking for new render jobs to do.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Online</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="getoffButton">
+       <property name="contextMenuPolicy">
+        <enum>Qt::DefaultContextMenu</enum>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kill the current job and set render node status to OFFLINE. The render node will not look for new jobs until its put back on-line.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Get Off!</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="offlineButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Set render node status to OFFLINE. The render node will complete its current job, if any, and stop looking for new jobs.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Offline</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="statusLabel">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Status:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="jobLabel">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>60</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Job id:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameLabel">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Node name:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh Info</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
